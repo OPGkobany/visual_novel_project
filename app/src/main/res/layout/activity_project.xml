@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bgforest2" />
+
+    <ImageView
+        android:id="@+id/characterImage"
+        android:layout_width="375dp"
+        android:layout_height="375dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/grib"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <EditText
+        android:id="@+id/projectText"
+        android:layout_width="399dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/black"
+        android:hint="ВВЕДИТЕ ТЕКСТ"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBackround"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characterImage" />
+
+    <Button
+        android:id="@+id/buttonBackround"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить фон 🏞"
+
+        app:layout_constraintBottom_toTopOf="@+id/buttonCharacter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <Button
+        android:id="@+id/buttonCharacter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить персонажа😇"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_pass_auth"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonProject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCharacter"
+        tools:layout_editor_absoluteY="665dp"
+        tools:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
