@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                 else {
                     val user = User(login, email, pass)
 
-                    val db = DBhelper(this, null)
+                    val db = databaseHelper(this, null)
                     db.addUser(user)
                     Toast.makeText(this, "пользователь $login добавлен", Toast.LENGTH_LONG).show()
 

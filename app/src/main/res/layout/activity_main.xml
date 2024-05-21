@@ -61,7 +61,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:backgroundTint="#75BDF6"
-        android:text="Зайти"
+        android:text="Cоздать аккаунт"
         android:textColor="#021C5E"
         android:textSize="16sp"
         android:textStyle="bold"

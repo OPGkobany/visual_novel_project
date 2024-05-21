@@ -12,16 +12,13 @@ class ItemsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_items)
 
-
-
         val itemsList: RecyclerView = findViewById(R.id.itemsList)
         val items = arrayListOf<Item>()
         val buttonProject: Button = findViewById(R.id.buttonItemsProject)
 
-
         items.add(Item(1, "grib", "СТАРИЧОК-БОРОВИЧОК", "Невероятные приключения старичка-боровичка в магическом лесу",
-            "В новой главе Старичок-боровичок принимает участе в балканских войнах" +
-                    "За чью сторону он будет воевать?🥰"))
+            "В новой главе Старичок-боровичок уходит в лес от цивиллизации\n" +
+                    "Ради какой цели он решил анонимно посещать университеты и аэропорта?"))
 
         itemsList.layoutManager = LinearLayoutManager(this)
         itemsList.adapter = ItemsAdapter(items,this)

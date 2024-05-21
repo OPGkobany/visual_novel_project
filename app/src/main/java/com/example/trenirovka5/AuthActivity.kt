@@ -31,7 +31,7 @@ class AuthActivity : AppCompatActivity() {
                 if (loginAuth == "" || passAuth == "")
                     Toast.makeText(this, "Не все поля заполнены", Toast.LENGTH_SHORT).show()
                 else {
-                   val db = DBhelper(this,null)
+                   val db = databaseHelper(this,null)
                     val isAuth = db.getUser(loginAuth,passAuth)
 
                     if(isAuth) {
