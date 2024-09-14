@@ -11,4 +11,4 @@
 
 ![Скриншот 1](demonstration/demonstration.png)  
 ![Скриншот 2](demonstration/demonstration2.png)
-![Скриншот 3](demonstration/demonstration3.png)
+
